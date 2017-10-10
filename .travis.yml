@@ -5,7 +5,7 @@ cache: pip
 before_script:
   - git config user.name "Dominik Wisskirchen"
   - git config user.email "dominik.wisskirchen@ebf.de"
-  - git remote add production "https://${GH_TOKEN}@github.com/Jasonette/documentation.git";
-  - git fetch master && git fetch production gh-pages:gh-pages;
+  - git remote add master "https://${GH_TOKEN}@github.com/ebf/jasonette-documentation.git";
+  - git fetch master && git fetch master gh-pages:gh-pages;
 
 script: mkdocs gh-deploy --clean --remote-name master
