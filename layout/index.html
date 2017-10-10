@@ -106,6 +106,15 @@
         </ul>
     
 
+    <li class="toctree-l3"><a href="#types-of-layout-ebf-additions">Types of layout - EBF Additions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#grid">grid</a></li>
+        
+        </ul>
+    
+
     <li class="toctree-l3"><a href="#styling-a-layout">Styling a layout</a></li>
     
         <ul>
@@ -311,6 +320,42 @@
 </code></pre>
 <p>Above JSON will render into the following view:</p>
 <p><img alt="nested layout example" src="../images/nested_layout.png" /></p>
+<hr />
+<h1 id="types-of-layout-ebf-additions">Types of layout - EBF Additions</h1>
+<ul>
+<li><a href="#grid">grid</a></li>
+</ul>
+<h2 id="grid">grid</h2>
+<p>A grid layout will display its components in rows and columns. The grid view will show as many columns per row as possible, based on <code>component_width</code>, in order to accomodate for differnt screen dimensions. The height of a row is automatically calculated and must be equal to the height of the tallest item of that row. Components within a grid layout will be centered horizontally and vertically if they don't occupy all availble column space.</p>
+<pre><code>{
+  "$jason": {
+    "head": {
+      "title": "grid layout demo"
+    },
+    "body": {
+      "sections": [{
+        "items": [{
+          "type": "grid",
+          "component_width": "200",
+          "components": [{
+            "type": "image",
+            "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+            "style": {
+              "width": "80"
+            }
+          }, {
+            "type": "image",
+            "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+            "style": {
+              "width": "80"
+            }
+          }]
+        }]
+      }]
+    }
+  }
+}
+</code></pre>
 <hr />
 <h1 id="styling-a-layout">Styling a layout</h1>
 <h2 id="syntax">syntax</h2>
