@@ -126,6 +126,45 @@ Above JSON will render into the following view:
 
 ---
 
+# Types of layout - EBF Additions
+
+  - [grid](#grid)
+
+
+## grid
+A grid layout will display its components in rows and columns. The grid view will show as many columns per row as possible, based on `component_width`, in order to accomodate for differnt screen dimensions. The height of a row is automatically calculated and must be equal to the height of the tallest item of that row. Components within a grid layout will be centered horizontally and vertically if they don't occupy all availble column space.
+
+    {
+      "$jason": {
+        "head": {
+          "title": "grid layout demo"
+        },
+        "body": {
+          "sections": [{
+            "items": [{
+              "type": "grid",
+              "component_width": "200",
+              "components": [{
+                "type": "image",
+                "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+                "style": {
+                  "width": "80"
+                }
+              }, {
+                "type": "image",
+                "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
+                "style": {
+                  "width": "80"
+                }
+              }]
+            }]
+          }]
+        }
+      }
+    }
+
+---
+
 # Styling a layout
 
 ## syntax
