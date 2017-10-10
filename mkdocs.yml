@@ -1,5 +1,4 @@
-site_name: Jasonette
-google_analytics: ['UA-54282166-8', 'auto']
+site_name: EBF Jasonette
 pages: 
 - ■ Getting started: index.md
 - ■ iOS: ios.md
