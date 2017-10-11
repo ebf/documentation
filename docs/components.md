@@ -520,6 +520,8 @@ However on Android you need to set it up using Google Maps API.
 - [radiobuttons](#radiobuttons)
 - [checkboxes](#checkboxes)
 - [dropdown](#dropdown)
+- [datepicker](#datepicker)
+- [datetimepicker](#datetimepicker)
 
 ##■ switch
 
@@ -691,3 +693,71 @@ Displays a dropdown element. When the user taps the element, a list of options i
     }
 
 ---
+
+##■ datepicker
+
+Date Picker view. Allows the user to select a date without time.
+
+TODO: @ogy: replace these ugly ass images
+
+*datepicker component before selection*
+![datepicker component 1](images/components_datepicker_1.png)
+
+*datepicker component upon selection*
+![datepicker component 2](images/components_datepicker_2.png)
+
+###syntax
+
+  - `type`: `"datepicker"`
+  - `defaultValue`: `ISO8601 compliant date`
+  - `style`: (applies to datepicker component before selection only)
+    - `size`: text size
+    - `color`: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)
+    - `padding`: padding in pixels around the entire component
+    
+###example
+
+    {
+      "type": "datepicker",
+      "defaultValue": "2017-01-30T00:00:00Z",
+      "style": {
+        "size": "30",
+        "color": "rgb(200,0,0)",
+        "padding": "10"
+      }
+    }
+
+    ---
+
+##■ datetimepicker
+
+DateTime Picker view. Allows the user to select a date and time.
+
+TODO: @ogy: replace these ugly ass images
+
+*datetimepicker component before selection*
+![datetimepicker component 1](images/components_datetimepicker_1.png)
+
+*datetimepicker component upon selection*
+![datetimepicker component 2](images/components_datetimepicker_2.png)
+
+###syntax
+
+  - `type`: `"datetimepicker"`
+  - `defaultValue`: `ISO8601 compliant date`
+  - `style`: (applies to datetimepicker component before selection only)
+    - `size`: text size
+    - `color`: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)
+    - `padding`: padding in pixels around the entire component
+    
+###example
+
+    {
+      "type": "datetimepicker",
+      "defaultValue": "2017-01-30T00:00:00Z",
+      "style": {
+        "size": "30",
+        "color": "rgb(200,0,0)",
+        "padding": "10"
+      }
+    }
