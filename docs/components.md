@@ -517,29 +517,72 @@ However on Android you need to set it up using Google Maps API.
 # Types of Components - EBF Additions
 
 - [Switch](#switch)
+- [RadioButtons](#radiobuttons)
 
 ##■ switch
 
-Switch view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be true or false.
+Switch view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be `"true"` or `"false"`.
 
 ![switch component](images/components_switch.png)
 
 ###syntax
 
   - `type`: `"switch"`
-  - `text`: The text to above the switch
-  - `description`: The text to display below the switch
+  - `value`: `"true"` or `"false"`
   - `style`:
-    - `size`: text size (applies to `text` and switch background and border)
-    - `color`: text color in color code (applies only to `text`)
+    - `size`: text size
+    - `color`: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)
     - `padding`: padding in pixels around the entire component
     
 ###example
 
     {
       "type": "switch",
-      "text": "Valid",
-      "description": "Lorem ipsum dolor sit amet",
+      "value": "true",
+      "style": {
+        "size": "30",
+        "color": "rgb(200,0,0)",
+        "padding": "10"
+      }
+    }
+
+---
+
+##■ radiobuttons
+
+Displays a set of buttons, of which only one button can be selected at once. The selected button is highlighted.
+
+![radiobuttons component](images/components_radiobuttons.png)
+
+###syntax
+
+  - `type`: `"radiobuttons"`
+  - `options`: an array of option objects, each of which contains a label and a value
+  - `defaultValue`: optional. the value of the default option to be preselected
+  - `style`:
+    - `size`: text size
+    - `color`: text color in color code
+    - `padding`: padding in pixels around the entire component
+    
+###example
+
+    {
+      "type": "radiobuttons",
+      "options": [
+        {
+          "label": "Radio Button 01",
+          "value": "Value 1"
+        },
+        {
+          "label": "Radio Button 02",
+          "value": "Value 2"
+        },
+        {
+          "label": "Radio Button 03",
+          "value": "Value 3"
+        }
+      ],
+      "defaultValue": "Value 2",
       "style": {
         "size": "30",
         "color": "rgb(200,0,0)",
