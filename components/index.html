@@ -126,6 +126,10 @@
         
             <li><a class="toctree-l4" href="#dropdown">■ dropdown</a></li>
         
+            <li><a class="toctree-l4" href="#datepicker">■ datepicker</a></li>
+        
+            <li><a class="toctree-l4" href="#datetimepicker">■ datetimepicker</a></li>
+        
         </ul>
     
 
@@ -687,6 +691,8 @@
 <li><a href="#radiobuttons">radiobuttons</a></li>
 <li><a href="#checkboxes">checkboxes</a></li>
 <li><a href="#dropdown">dropdown</a></li>
+<li><a href="#datepicker">datepicker</a></li>
+<li><a href="#datetimepicker">datetimepicker</a></li>
 </ul>
 <h2 id="switch">■ switch</h2>
 <p>Switch view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be <code>"true"</code> or <code>"false"</code>.</p>
@@ -845,6 +851,66 @@
 }
 </code></pre>
 <hr />
+<h2 id="datepicker">■ datepicker</h2>
+<p>Date Picker view. Allows the user to select a date without time.</p>
+<p>TODO: @ogy: replace these ugly ass images</p>
+<p><em>datepicker component before selection</em>
+<img alt="datepicker component 1" src="../images/components_datepicker_1.png" /></p>
+<p><em>datepicker component upon selection</em>
+<img alt="datepicker component 2" src="../images/components_datepicker_2.png" /></p>
+<h3 id="syntax_11">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"datepicker"</code></li>
+<li><code>defaultValue</code>: <code>ISO8601 compliant date</code></li>
+<li><code>style</code>: (applies to datepicker component before selection only)<ul>
+<li><code>size</code>: text size</li>
+<li><code>color</code>: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)</li>
+<li><code>padding</code>: padding in pixels around the entire component</li>
+</ul>
+</li>
+</ul>
+<h3 id="example_10">example</h3>
+<pre><code>{
+  "type": "datepicker",
+  "defaultValue": "2017-01-30T00:00:00Z",
+  "style": {
+    "size": "30",
+    "color": "rgb(200,0,0)",
+    "padding": "10"
+  }
+}
+
+---
+</code></pre>
+<h2 id="datetimepicker">■ datetimepicker</h2>
+<p>DateTime Picker view. Allows the user to select a date and time.</p>
+<p>TODO: @ogy: replace these ugly ass images</p>
+<p><em>datetimepicker component before selection</em>
+<img alt="datetimepicker component 1" src="../images/components_datetimepicker_1.png" /></p>
+<p><em>datetimepicker component upon selection</em>
+<img alt="datetimepicker component 2" src="../images/components_datetimepicker_2.png" /></p>
+<h3 id="syntax_12">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"datetimepicker"</code></li>
+<li><code>defaultValue</code>: <code>ISO8601 compliant date</code></li>
+<li><code>style</code>: (applies to datetimepicker component before selection only)<ul>
+<li><code>size</code>: text size</li>
+<li><code>color</code>: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)</li>
+<li><code>padding</code>: padding in pixels around the entire component</li>
+</ul>
+</li>
+</ul>
+<h3 id="example_11">example</h3>
+<pre><code>{
+  "type": "datetimepicker",
+  "defaultValue": "2017-01-30T00:00:00Z",
+  "style": {
+    "size": "30",
+    "color": "rgb(200,0,0)",
+    "padding": "10"
+  }
+}
+</code></pre>
               
             </div>
           </div>
