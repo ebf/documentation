@@ -514,3 +514,38 @@ However on Android you need to set it up using Google Maps API.
 
 <img src='../images/map_permission.png' class='large'>
 
+# Types of Components - EBF Additions
+
+- [Switch](#switch)
+
+##■ switch
+
+Switch view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be true or false.
+
+![switch component](images/components_switch.png)
+
+###syntax
+
+  - `type`: `"switch"`
+  - `text`: The text to above the switch
+  - `description`: The text to display below the switch
+  - `style`:
+    - `size`: text size (applies to `text` and switch background and border)
+    - `color`: text color in color code (applies only to `text`)
+    - `padding`: padding in pixels around the entire component
+    
+###example
+
+    {
+      "type": "switch",
+      "text": "Valid",
+      "description": "Lorem ipsum dolor sit amet",
+      "style": {
+        "size": "30",
+        "color": "rgb(200,0,0)",
+        "padding": "10"
+      }
+    }
+
+---
+
