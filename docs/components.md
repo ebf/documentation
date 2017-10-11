@@ -516,8 +516,10 @@ However on Android you need to set it up using Google Maps API.
 
 # Types of Components - EBF Additions
 
-- [Switch](#switch)
-- [RadioButtons](#radiobuttons)
+- [switch](#switch)
+- [radiobuttons](#radiobuttons)
+- [checkboxes](#checkboxes)
+- [dropdown](#dropdown)
 
 ##■ switch
 
@@ -592,3 +594,100 @@ Displays a set of buttons, of which only one button can be selected at once. The
 
 ---
 
+##■ checkboxes
+
+Displays a set of buttons each containing a checkbox and a label. Multiple buttons can be selected at the same time.
+
+![checkboxes component](images/components_checkboxes.png)
+
+###syntax
+
+  - `type`: `"checkboxes"`
+  - `options`: an array of option objects, each of which contains a label and a value
+  - `defaultValues`: optional. an array of values of the default options to be preselected
+  - `style`:
+    - `size`: text size
+    - `color`: text color in color code
+    - `padding`: padding in pixels around the entire component
+    
+###example
+
+    {
+      "type": "checkboxes",
+      "options": [
+        {
+          "label": "Checkbox Option 1",
+          "value": "Value 1"
+        },
+        {
+          "label": "Checkbox Option 2",
+          "value": "Value 2"
+        },
+        {
+          "label": "Checkbox Option 3",
+          "value": "Value 3"
+        }
+      ],
+      "defaultValues": [
+        "Value 1",
+        "Value 3",
+      ],
+      "style": {
+        "size": "30",
+        "color": "rgb(200,0,0)",
+        "padding": "10"
+      }
+    }
+
+---
+
+##■ dropdown
+
+Displays a dropdown element. When the user taps the element, a list of options is presented to the user. The user may select only one option at a time.
+
+*DropDown element before selection*
+![dropdown component 1](images/components_dropdown_1.png)
+
+*DropDown selection slideout*
+![dropdown component 2](images/components_dropdown_2.png)
+
+*DropDown element after selection (or when defaultValue is set)*
+![dropdown component 3](images/components_dropdown_3.png)
+
+###syntax
+
+  - `type`: `"dropdown"`
+  - `options`: an array of option objects, each of which contains a label and a value
+  - `defaultValue`: optional. a value of the default option to be preselected
+  - `style`:
+    - `size`: text size
+    - `color`: text color in color code
+    - `padding`: padding in pixels around the entire component
+    
+###example
+
+    {
+      "type": "dropdown",
+      "options": [
+        {
+          "label": "Dropdown Option 1",
+          "value": "Value 1"
+        },
+        {
+          "label": "Dropdown Option 2",
+          "value": "Value 2"
+        },
+        {
+          "label": "Dropdown Option 3",
+          "value": "Value 3"
+        }
+      ],
+      "defaultValue": "Value 2",
+      "style": {
+        "size": "30",
+        "color": "rgb(200,0,0)",
+        "padding": "10"
+      }
+    }
+
+---
