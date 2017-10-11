@@ -114,6 +114,21 @@
         </ul>
     
 
+    <li class="toctree-l3"><a href="#types-of-components-ebf-additions">Types of Components - EBF Additions</a></li>
+    
+        <ul>
+        
+            <li><a class="toctree-l4" href="#switch">■ switch</a></li>
+        
+            <li><a class="toctree-l4" href="#radiobuttons">■ radiobuttons</a></li>
+        
+            <li><a class="toctree-l4" href="#checkboxes">■ checkboxes</a></li>
+        
+            <li><a class="toctree-l4" href="#dropdown">■ dropdown</a></li>
+        
+        </ul>
+    
+
     </ul>
                 </li>
                 <li class="">
@@ -666,6 +681,170 @@
 </ol>
 <p><br></p>
 <p><img src='../images/map_permission.png' class='large'></p>
+<h1 id="types-of-components-ebf-additions">Types of Components - EBF Additions</h1>
+<ul>
+<li><a href="#switch">switch</a></li>
+<li><a href="#radiobuttons">radiobuttons</a></li>
+<li><a href="#checkboxes">checkboxes</a></li>
+<li><a href="#dropdown">dropdown</a></li>
+</ul>
+<h2 id="switch">■ switch</h2>
+<p>Switch view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be <code>"true"</code> or <code>"false"</code>.</p>
+<p><img alt="switch component" src="../images/components_switch.png" /></p>
+<h3 id="syntax_7">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"switch"</code></li>
+<li><code>value</code>: <code>"true"</code> or <code>"false"</code></li>
+<li><code>style</code>:<ul>
+<li><code>size</code>: text size</li>
+<li><code>color</code>: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)</li>
+<li><code>padding</code>: padding in pixels around the entire component</li>
+</ul>
+</li>
+</ul>
+<h3 id="example_6">example</h3>
+<pre><code>{
+  "type": "switch",
+  "value": "true",
+  "style": {
+    "size": "30",
+    "color": "rgb(200,0,0)",
+    "padding": "10"
+  }
+}
+</code></pre>
+<hr />
+<h2 id="radiobuttons">■ radiobuttons</h2>
+<p>Displays a set of buttons, of which only one button can be selected at once. The selected button is highlighted.</p>
+<p><img alt="radiobuttons component" src="../images/components_radiobuttons.png" /></p>
+<h3 id="syntax_8">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"radiobuttons"</code></li>
+<li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
+<li><code>defaultValue</code>: optional. the value of the default option to be preselected</li>
+<li><code>style</code>:<ul>
+<li><code>size</code>: text size</li>
+<li><code>color</code>: text color in color code</li>
+<li><code>padding</code>: padding in pixels around the entire component</li>
+</ul>
+</li>
+</ul>
+<h3 id="example_7">example</h3>
+<pre><code>{
+  "type": "radiobuttons",
+  "options": [
+    {
+      "label": "Radio Button 01",
+      "value": "Value 1"
+    },
+    {
+      "label": "Radio Button 02",
+      "value": "Value 2"
+    },
+    {
+      "label": "Radio Button 03",
+      "value": "Value 3"
+    }
+  ],
+  "defaultValue": "Value 2",
+  "style": {
+    "size": "30",
+    "color": "rgb(200,0,0)",
+    "padding": "10"
+  }
+}
+</code></pre>
+<hr />
+<h2 id="checkboxes">■ checkboxes</h2>
+<p>Displays a set of buttons each containing a checkbox and a label. Multiple buttons can be selected at the same time.</p>
+<p><img alt="checkboxes component" src="../images/components_checkboxes.png" /></p>
+<h3 id="syntax_9">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"checkboxes"</code></li>
+<li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
+<li><code>defaultValues</code>: optional. an array of values of the default options to be preselected</li>
+<li><code>style</code>:<ul>
+<li><code>size</code>: text size</li>
+<li><code>color</code>: text color in color code</li>
+<li><code>padding</code>: padding in pixels around the entire component</li>
+</ul>
+</li>
+</ul>
+<h3 id="example_8">example</h3>
+<pre><code>{
+  "type": "checkboxes",
+  "options": [
+    {
+      "label": "Checkbox Option 1",
+      "value": "Value 1"
+    },
+    {
+      "label": "Checkbox Option 2",
+      "value": "Value 2"
+    },
+    {
+      "label": "Checkbox Option 3",
+      "value": "Value 3"
+    }
+  ],
+  "defaultValues": [
+    "Value 1",
+    "Value 3",
+  ],
+  "style": {
+    "size": "30",
+    "color": "rgb(200,0,0)",
+    "padding": "10"
+  }
+}
+</code></pre>
+<hr />
+<h2 id="dropdown">■ dropdown</h2>
+<p>Displays a dropdown element. When the user taps the element, a list of options is presented to the user. The user may select only one option at a time.</p>
+<p><em>DropDown element before selection</em>
+<img alt="dropdown component 1" src="../images/components_dropdown_1.png" /></p>
+<p><em>DropDown selection slideout</em>
+<img alt="dropdown component 2" src="../images/components_dropdown_2.png" /></p>
+<p><em>DropDown element after selection (or when defaultValue is set)</em>
+<img alt="dropdown component 3" src="../images/components_dropdown_3.png" /></p>
+<h3 id="syntax_10">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"dropdown"</code></li>
+<li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
+<li><code>defaultValue</code>: optional. a value of the default option to be preselected</li>
+<li><code>style</code>:<ul>
+<li><code>size</code>: text size</li>
+<li><code>color</code>: text color in color code</li>
+<li><code>padding</code>: padding in pixels around the entire component</li>
+</ul>
+</li>
+</ul>
+<h3 id="example_9">example</h3>
+<pre><code>{
+  "type": "dropdown",
+  "options": [
+    {
+      "label": "Dropdown Option 1",
+      "value": "Value 1"
+    },
+    {
+      "label": "Dropdown Option 2",
+      "value": "Value 2"
+    },
+    {
+      "label": "Dropdown Option 3",
+      "value": "Value 3"
+    }
+  ],
+  "defaultValue": "Value 2",
+  "style": {
+    "size": "30",
+    "color": "rgb(200,0,0)",
+    "padding": "10"
+  }
+}
+</code></pre>
+<hr />
               
             </div>
           </div>
