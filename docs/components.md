@@ -525,14 +525,15 @@ However on Android you need to set it up using Google Maps API.
 
 ##■ toggle
 
-Toggle (Switch) view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be `"true"` or `"false"`.
+Toggle (Switch) view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be `"0"` (No) or `"1"` (Yes).
 
 ![toggle component](images/components_toggle.png)
 
 ###syntax
 
   - `type`: `"toggle"`
-  - `value`: `"true"` or `"false"`
+  - `name`: name of the local variable to set.
+  - `value`: `"0"` or `"1"`
   - `style`:
     - `size`: text size
     - `color`: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)
@@ -542,6 +543,7 @@ Toggle (Switch) view to display a boolean value. The label is always Yes or No (
 
     {
       "type": "toggle",
+      "name": "someFieldName",
       "value": "true",
       "style": {
         "size": "30",
@@ -561,6 +563,7 @@ Displays a set of buttons, of which only one button can be selected at once. The
 ###syntax
 
   - `type`: `"radiobuttons"`
+  - `name`: name of the local variable to set.
   - `options`: an array of option objects, each of which contains a label and a value
   - `defaultValue`: optional. the value of the default option to be preselected
   - `style`:
@@ -572,6 +575,7 @@ Displays a set of buttons, of which only one button can be selected at once. The
 
     {
       "type": "radiobuttons",
+      "name": "someFieldName",
       "options": [
         {
           "label": "Radio Button 01",
@@ -605,6 +609,7 @@ Displays a set of buttons each containing a checkbox and a label. Multiple butto
 ###syntax
 
   - `type`: `"checkboxes"`
+  - `name`: name of the local variable to set.
   - `options`: an array of option objects, each of which contains a label and a value
   - `defaultValues`: optional. an array of values of the default options to be preselected
   - `style`:
@@ -616,6 +621,7 @@ Displays a set of buttons each containing a checkbox and a label. Multiple butto
 
     {
       "type": "checkboxes",
+      "name": "someFieldName",
       "options": [
         {
           "label": "Checkbox Option 1",
@@ -659,6 +665,7 @@ Displays a dropdown element. When the user taps the element, a list of options i
 ###syntax
 
   - `type`: `"dropdown"`
+  - `name`: name of the local variable to set.
   - `options`: an array of option objects, each of which contains a label and a value
   - `defaultValue`: optional. a value of the default option to be preselected
   - `style`:
@@ -670,6 +677,7 @@ Displays a dropdown element. When the user taps the element, a list of options i
 
     {
       "type": "dropdown",
+      "name": "someFieldName",
       "options": [
         {
           "label": "Dropdown Option 1",
@@ -709,6 +717,7 @@ TODO: @ogy: replace these ugly ass images
 ###syntax
 
   - `type`: `"datepicker"`
+  - `name`: name of the local variable to set.
   - `defaultValue`: `ISO8601 compliant date`
   - `style`: (applies to datepicker component before selection only)
     - `size`: text size
@@ -719,6 +728,7 @@ TODO: @ogy: replace these ugly ass images
 
     {
       "type": "datepicker",
+      "name": "someFieldName",
       "defaultValue": "2017-01-30T00:00:00Z",
       "style": {
         "size": "30",
@@ -744,6 +754,7 @@ TODO: @ogy: replace these ugly ass images
 ###syntax
 
   - `type`: `"datetimepicker"`
+  - `name`: name of the local variable to set.
   - `defaultValue`: `ISO8601 compliant date`
   - `style`: (applies to datetimepicker component before selection only)
     - `size`: text size
@@ -754,6 +765,7 @@ TODO: @ogy: replace these ugly ass images
 
     {
       "type": "datetimepicker",
+      "name": "someFieldName",
       "defaultValue": "2017-01-30T00:00:00Z",
       "style": {
         "size": "30",
