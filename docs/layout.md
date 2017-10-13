@@ -134,6 +134,19 @@ Above JSON will render into the following view:
 ## grid
 A grid layout will display its components in rows and columns. The grid view will show as many columns per row as possible, based on `component_width`, in order to accomodate for differnt screen dimensions. The height of a row is automatically calculated and must be equal to the height of the tallest item of that row. Components within a grid layout will be centered horizontally and vertically if they don't occupy all availble column space.
 
+![grid layout](images/layout_grid.png)
+
+###syntax
+
+  - `type`: `"grid"`
+  - `component_width`: The text to display
+  - `grid_border`: The color in color code of the 1px border between grid items or `none` if hidden
+  - `style`:
+    - `background`: background color of the grid layout
+  - `components`: grid items
+   
+###example
+
     {
       "$jason": {
         "head": {
@@ -144,6 +157,7 @@ A grid layout will display its components in rows and columns. The grid view wil
             "items": [{
               "type": "grid",
               "component_width": "200",
+              "grid_border": "#abcdef",
               "components": [{
                 "type": "image",
                 "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
