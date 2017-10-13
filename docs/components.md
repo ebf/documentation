@@ -516,22 +516,22 @@ However on Android you need to set it up using Google Maps API.
 
 # Types of Components - EBF Additions
 
-- [switch](#switch)
+- [toggle](#toggle)
 - [radiobuttons](#radiobuttons)
 - [checkboxes](#checkboxes)
 - [dropdown](#dropdown)
 - [datepicker](#datepicker)
 - [datetimepicker](#datetimepicker)
 
-##■ switch
+##■ toggle
 
-Switch view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be `"true"` or `"false"`.
+Toggle (Switch) view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be `"true"` or `"false"`.
 
-![switch component](images/components_switch.png)
+![toggle component](images/components_toggle.png)
 
 ###syntax
 
-  - `type`: `"switch"`
+  - `type`: `"toggle"`
   - `value`: `"true"` or `"false"`
   - `style`:
     - `size`: text size
@@ -541,7 +541,7 @@ Switch view to display a boolean value. The label is always Yes or No (internati
 ###example
 
     {
-      "type": "switch",
+      "type": "toggle",
       "value": "true",
       "style": {
         "size": "30",
