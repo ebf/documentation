@@ -695,12 +695,13 @@
 <li><a href="#datetimepicker">datetimepicker</a></li>
 </ul>
 <h2 id="toggle">■ toggle</h2>
-<p>Toggle (Switch) view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be <code>"true"</code> or <code>"false"</code>.</p>
+<p>Toggle (Switch) view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be <code>"0"</code> (No) or <code>"1"</code> (Yes).</p>
 <p><img alt="toggle component" src="../images/components_toggle.png" /></p>
 <h3 id="syntax_7">syntax</h3>
 <ul>
 <li><code>type</code>: <code>"toggle"</code></li>
-<li><code>value</code>: <code>"true"</code> or <code>"false"</code></li>
+<li><code>name</code>: name of the local variable to set.</li>
+<li><code>value</code>: <code>"0"</code> or <code>"1"</code></li>
 <li><code>style</code>:<ul>
 <li><code>size</code>: text size</li>
 <li><code>color</code>: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)</li>
@@ -711,6 +712,7 @@
 <h3 id="example_6">example</h3>
 <pre><code>{
   "type": "toggle",
+  "name": "someFieldName",
   "value": "true",
   "style": {
     "size": "30",
@@ -726,6 +728,7 @@
 <h3 id="syntax_8">syntax</h3>
 <ul>
 <li><code>type</code>: <code>"radiobuttons"</code></li>
+<li><code>name</code>: name of the local variable to set.</li>
 <li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
 <li><code>defaultValue</code>: optional. the value of the default option to be preselected</li>
 <li><code>style</code>:<ul>
@@ -738,6 +741,7 @@
 <h3 id="example_7">example</h3>
 <pre><code>{
   "type": "radiobuttons",
+  "name": "someFieldName",
   "options": [
     {
       "label": "Radio Button 01",
@@ -767,6 +771,7 @@
 <h3 id="syntax_9">syntax</h3>
 <ul>
 <li><code>type</code>: <code>"checkboxes"</code></li>
+<li><code>name</code>: name of the local variable to set.</li>
 <li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
 <li><code>defaultValues</code>: optional. an array of values of the default options to be preselected</li>
 <li><code>style</code>:<ul>
@@ -779,6 +784,7 @@
 <h3 id="example_8">example</h3>
 <pre><code>{
   "type": "checkboxes",
+  "name": "someFieldName",
   "options": [
     {
       "label": "Checkbox Option 1",
@@ -816,6 +822,7 @@
 <h3 id="syntax_10">syntax</h3>
 <ul>
 <li><code>type</code>: <code>"dropdown"</code></li>
+<li><code>name</code>: name of the local variable to set.</li>
 <li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
 <li><code>defaultValue</code>: optional. a value of the default option to be preselected</li>
 <li><code>style</code>:<ul>
@@ -828,6 +835,7 @@
 <h3 id="example_9">example</h3>
 <pre><code>{
   "type": "dropdown",
+  "name": "someFieldName",
   "options": [
     {
       "label": "Dropdown Option 1",
@@ -861,6 +869,7 @@
 <h3 id="syntax_11">syntax</h3>
 <ul>
 <li><code>type</code>: <code>"datepicker"</code></li>
+<li><code>name</code>: name of the local variable to set.</li>
 <li><code>defaultValue</code>: <code>ISO8601 compliant date</code></li>
 <li><code>style</code>: (applies to datepicker component before selection only)<ul>
 <li><code>size</code>: text size</li>
@@ -872,6 +881,7 @@
 <h3 id="example_10">example</h3>
 <pre><code>{
   "type": "datepicker",
+  "name": "someFieldName",
   "defaultValue": "2017-01-30T00:00:00Z",
   "style": {
     "size": "30",
@@ -892,6 +902,7 @@
 <h3 id="syntax_12">syntax</h3>
 <ul>
 <li><code>type</code>: <code>"datetimepicker"</code></li>
+<li><code>name</code>: name of the local variable to set.</li>
 <li><code>defaultValue</code>: <code>ISO8601 compliant date</code></li>
 <li><code>style</code>: (applies to datetimepicker component before selection only)<ul>
 <li><code>size</code>: text size</li>
@@ -903,6 +914,7 @@
 <h3 id="example_11">example</h3>
 <pre><code>{
   "type": "datetimepicker",
+  "name": "someFieldName",
   "defaultValue": "2017-01-30T00:00:00Z",
   "style": {
     "size": "30",
