@@ -132,6 +132,8 @@
         
             <li><a class="toctree-l4" href="#numberfield">■ numberfield</a></li>
         
+            <li><a class="toctree-l4" href="#pager">■ pager</a></li>
+        
         </ul>
     
 
@@ -696,6 +698,7 @@
 <li><a href="#datepicker">datepicker</a></li>
 <li><a href="#datetimepicker">datetimepicker</a></li>
 <li><a href="#numberfield">numberfield</a></li>
+<li><a href="#pager">pager</a></li>
 </ul>
 <h2 id="toggle">■ toggle</h2>
 <p>Toggle (Switch) view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be <code>"0"</code> (No) or <code>"1"</code> (Yes).</p>
@@ -958,6 +961,38 @@
     "color": "rgb(200,0,0)",
     "padding": "10"
   }
+}
+</code></pre>
+<hr />
+<h2 id="pager">■ pager</h2>
+<p>Component that allows the user to switch between different pages of components by swiping left and right</p>
+<p><em>pager component</em></p>
+<p><img alt="pager component" src="../images/components_pager.png" /></p>
+<p><em>pager component with position <code>"bottom"</code></em></p>
+<p><img alt="pager component bottom" src="../images/components_pager_bottom.png" /></p>
+<h3 id="syntax_14">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"pager"</code></li>
+<li><code>position</code>: <code>"top"</code> or <code>"bottom"</code></li>
+<li><code>pages</code>: array of pages that contain a name and a components property each</li>
+</ul>
+<h3 id="example_13">example</h3>
+<pre><code>{
+  "type": "pager",
+  "pages": [
+    {
+      "name": "Form_Page 01",
+      "components": [
+
+      ]
+    },
+    {
+      "name": "Page 2",
+      "components": [
+
+      ]
+    },
+  ]
 }
 </code></pre>
               
