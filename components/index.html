@@ -934,9 +934,10 @@
 <ul>
 <li><code>type</code>: <code>"numberfield"</code></li>
 <li><code>name</code>: name of the local variable to set.</li>
-<li><code>defaultValue</code>: default number</li>
-<li><code>minimumValue</code>: minimum number the user is allowed to enter</li>
-<li><code>maximumValue</code>: maximum number the user is allowed to enter</li>
+<li><code>defaultValue</code>: optional default number</li>
+<li><code>placeholder</code>: optional placholder number to display if field is empty</li>
+<li><code>minimumValue</code>: optional minimum number the user is allowed to enter</li>
+<li><code>maximumValue</code>: optional maximum number the user is allowed to enter</li>
 <li><code>style</code>:<ul>
 <li><code>size</code>: text size</li>
 <li><code>color</code>: color in color code</li>
@@ -949,6 +950,7 @@
   "type": "numberfield",
   "name": "someFieldName",
   "defaultValue": "5",
+  "placeholder": "1",
   "minimumValue": "1",
   "maximumValue": "10",
   "style": {
