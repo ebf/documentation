@@ -849,6 +849,6 @@ Component that allows the user to switch between different pages of components b
           "components": [
 
           ]
-        },
+        }
       ]
     }
