@@ -720,7 +720,7 @@ TODO: @ogy: replace these ugly ass images
 
   - `type`: `"datepicker"`
   - `name`: name of the local variable to set.
-  - `defaultValue`: `ISO8601 compliant date`
+  - `defaultValue`: optional ISO8601 compliant date
   - `style`: (applies to datepicker component before selection only)
     - `size`: text size
     - `color`: color in color code (applies to background and border, complimentary color is always transparent, so that the background "shines" through)
