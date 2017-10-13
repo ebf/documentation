@@ -523,6 +523,7 @@ However on Android you need to set it up using Google Maps API.
 - [datepicker](#datepicker)
 - [datetimepicker](#datetimepicker)
 - [numberfield](#numberfield)
+- [pager](#pager)
 
 ##■ toggle
 
@@ -810,4 +811,44 @@ TODO: @ogy: design number fields
         "color": "rgb(200,0,0)",
         "padding": "10"
       }
+    }
+
+---
+
+##■ pager
+
+Component that allows the user to switch between different pages of components by swiping left and right
+
+*pager component*
+
+![pager component](images/components_pager.png)
+
+*pager component with position `"bottom"`*
+
+![pager component bottom](images/components_pager_bottom.png)
+
+###syntax
+
+  - `type`: `"pager"`
+  - `position`: `"top"` or `"bottom"`
+  - `pages`: array of pages that contain a name and a components property each
+    
+###example
+
+    {
+      "type": "pager",
+      "pages": [
+        {
+          "name": "Form_Page 01",
+          "components": [
+
+          ]
+        },
+        {
+          "name": "Page 2",
+          "components": [
+
+          ]
+        },
+      ]
     }
