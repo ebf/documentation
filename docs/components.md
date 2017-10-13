@@ -564,8 +564,7 @@ Displays a set of buttons, of which only one button can be selected at once. The
 
   - `type`: `"radiobuttons"`
   - `name`: name of the local variable to set.
-  - `options`: an array of option objects, each of which contains a label and a value
-  - `defaultValue`: optional. the value of the default option to be preselected
+  - `options`: an array of option objects, each of which contains a label, a value and defaultSelected property
   - `style`:
     - `size`: text size
     - `color`: text color in color code
@@ -579,18 +578,20 @@ Displays a set of buttons, of which only one button can be selected at once. The
       "options": [
         {
           "label": "Radio Button 01",
-          "value": "Value 1"
+          "value": "Value 1",
+          "defaultSelected": "false"
         },
         {
           "label": "Radio Button 02",
-          "value": "Value 2"
+          "value": "Value 2",
+          "defaultSelected": "true"
         },
         {
           "label": "Radio Button 03",
-          "value": "Value 3"
+          "value": "Value 3",
+          "defaultSelected": "false"
         }
       ],
-      "defaultValue": "Value 2",
       "style": {
         "size": "30",
         "color": "rgb(200,0,0)",
@@ -610,8 +611,7 @@ Displays a set of buttons each containing a checkbox and a label. Multiple butto
 
   - `type`: `"checkboxes"`
   - `name`: name of the local variable to set.
-  - `options`: an array of option objects, each of which contains a label and a value
-  - `defaultValues`: optional. an array of values of the default options to be preselected
+  - `options`: an array of option objects, each of which contains a label, a value and defaultSelected property
   - `style`:
     - `size`: text size
     - `color`: text color in color code
@@ -625,20 +625,19 @@ Displays a set of buttons each containing a checkbox and a label. Multiple butto
       "options": [
         {
           "label": "Checkbox Option 1",
-          "value": "Value 1"
+          "value": "Value 1",
+          "defaultSelected": "true"
         },
         {
           "label": "Checkbox Option 2",
-          "value": "Value 2"
+          "value": "Value 2",
+          "defaultSelected": "false"
         },
         {
           "label": "Checkbox Option 3",
-          "value": "Value 3"
+          "value": "Value 3",
+          "defaultSelected": "true"
         }
-      ],
-      "defaultValues": [
-        "Value 1",
-        "Value 3",
       ],
       "style": {
         "size": "30",
@@ -666,8 +665,7 @@ Displays a dropdown element. When the user taps the element, a list of options i
 
   - `type`: `"dropdown"`
   - `name`: name of the local variable to set.
-  - `options`: an array of option objects, each of which contains a label and a value
-  - `defaultValue`: optional. a value of the default option to be preselected
+- `options`: an array of option objects, each of which contains a label, a value and defaultSelected property
   - `style`:
     - `size`: text size
     - `color`: text color in color code
@@ -681,18 +679,20 @@ Displays a dropdown element. When the user taps the element, a list of options i
       "options": [
         {
           "label": "Dropdown Option 1",
-          "value": "Value 1"
+          "value": "Value 1",
+          "defaultSelected": "false"
         },
         {
           "label": "Dropdown Option 2",
-          "value": "Value 2"
+          "value": "Value 2",
+          "defaultSelected": "true"
         },
         {
           "label": "Dropdown Option 3",
-          "value": "Value 3"
+          "value": "Value 3",
+          "defaultSelected": "false"
         }
       ],
-      "defaultValue": "Value 2",
       "style": {
         "size": "30",
         "color": "rgb(200,0,0)",
