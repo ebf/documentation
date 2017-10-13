@@ -3922,3 +3922,27 @@ The converted result right before `$render` will look something like this:
     }
 
 **[Check out the full JSON for the RSS reader example](http://www.jasonbase.com/things/2dL/edit)**
+
+---
+
+## EBF ADDITIONS
+##── LOGOUT ──
+Logout user
+
+
+---
+
+## $logout
+deletes and session data and returns to the native login screen if available or the initial jason screen
+
+
+### ■ example
+
+    {
+        "type": "button",
+        "text": "Logout",
+        "action": {
+            "type": "$logout"
+        }
+    }
+
