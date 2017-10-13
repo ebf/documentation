@@ -522,6 +522,7 @@ However on Android you need to set it up using Google Maps API.
 - [dropdown](#dropdown)
 - [datepicker](#datepicker)
 - [datetimepicker](#datetimepicker)
+- [numberfield](#numberfield)
 
 ##■ toggle
 
@@ -767,6 +768,41 @@ TODO: @ogy: replace these ugly ass images
       "type": "datetimepicker",
       "name": "someFieldName",
       "defaultValue": "2017-01-30T00:00:00Z",
+      "style": {
+        "size": "30",
+        "color": "rgb(200,0,0)",
+        "padding": "10"
+      }
+    }
+
+---
+
+##■ numberfield
+
+Component to display and edit number values
+
+TODO: @ogy: design number fields
+
+###syntax
+
+  - `type`: `"numberfield"`
+  - `name`: name of the local variable to set.
+  - `defaultValue`: default number
+  - `minimumValue`: minimum number the user is allowed to enter
+  - `maximumValue`: maximum number the user is allowed to enter
+  - `style`:
+    - `size`: text size
+    - `color`: color in color code
+    - `padding`: padding in pixels around the entire component
+    
+###example
+
+    {
+      "type": "numberfield",
+      "name": "someFieldName",
+      "defaultValue": "5",
+      "minimumValue": "1",
+      "maximumValue": "10",
       "style": {
         "size": "30",
         "color": "rgb(200,0,0)",
