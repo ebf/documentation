@@ -729,8 +729,7 @@
 <ul>
 <li><code>type</code>: <code>"radiobuttons"</code></li>
 <li><code>name</code>: name of the local variable to set.</li>
-<li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
-<li><code>defaultValue</code>: optional. the value of the default option to be preselected</li>
+<li><code>options</code>: an array of option objects, each of which contains a label, a value and defaultSelected property</li>
 <li><code>style</code>:<ul>
 <li><code>size</code>: text size</li>
 <li><code>color</code>: text color in color code</li>
@@ -745,18 +744,20 @@
   "options": [
     {
       "label": "Radio Button 01",
-      "value": "Value 1"
+      "value": "Value 1",
+      "defaultSelected": "false"
     },
     {
       "label": "Radio Button 02",
-      "value": "Value 2"
+      "value": "Value 2",
+      "defaultSelected": "true"
     },
     {
       "label": "Radio Button 03",
-      "value": "Value 3"
+      "value": "Value 3",
+      "defaultSelected": "false"
     }
   ],
-  "defaultValue": "Value 2",
   "style": {
     "size": "30",
     "color": "rgb(200,0,0)",
@@ -772,8 +773,7 @@
 <ul>
 <li><code>type</code>: <code>"checkboxes"</code></li>
 <li><code>name</code>: name of the local variable to set.</li>
-<li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
-<li><code>defaultValues</code>: optional. an array of values of the default options to be preselected</li>
+<li><code>options</code>: an array of option objects, each of which contains a label, a value and defaultSelected property</li>
 <li><code>style</code>:<ul>
 <li><code>size</code>: text size</li>
 <li><code>color</code>: text color in color code</li>
@@ -788,20 +788,19 @@
   "options": [
     {
       "label": "Checkbox Option 1",
-      "value": "Value 1"
+      "value": "Value 1",
+      "defaultSelected": "true"
     },
     {
       "label": "Checkbox Option 2",
-      "value": "Value 2"
+      "value": "Value 2",
+      "defaultSelected": "false"
     },
     {
       "label": "Checkbox Option 3",
-      "value": "Value 3"
+      "value": "Value 3",
+      "defaultSelected": "true"
     }
-  ],
-  "defaultValues": [
-    "Value 1",
-    "Value 3",
   ],
   "style": {
     "size": "30",
@@ -823,8 +822,7 @@
 <ul>
 <li><code>type</code>: <code>"dropdown"</code></li>
 <li><code>name</code>: name of the local variable to set.</li>
-<li><code>options</code>: an array of option objects, each of which contains a label and a value</li>
-<li><code>defaultValue</code>: optional. a value of the default option to be preselected</li>
+<li><code>options</code>: an array of option objects, each of which contains a label, a value and defaultSelected property</li>
 <li><code>style</code>:<ul>
 <li><code>size</code>: text size</li>
 <li><code>color</code>: text color in color code</li>
@@ -839,18 +837,20 @@
   "options": [
     {
       "label": "Dropdown Option 1",
-      "value": "Value 1"
+      "value": "Value 1",
+      "defaultSelected": "false"
     },
     {
       "label": "Dropdown Option 2",
-      "value": "Value 2"
+      "value": "Value 2",
+      "defaultSelected": "true"
     },
     {
       "label": "Dropdown Option 3",
-      "value": "Value 3"
+      "value": "Value 3",
+      "defaultSelected": "false"
     }
   ],
-  "defaultValue": "Value 2",
   "style": {
     "size": "30",
     "color": "rgb(200,0,0)",
