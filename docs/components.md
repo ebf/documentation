@@ -787,9 +787,10 @@ TODO: @ogy: design number fields
 
   - `type`: `"numberfield"`
   - `name`: name of the local variable to set.
-  - `defaultValue`: default number
-  - `minimumValue`: minimum number the user is allowed to enter
-  - `maximumValue`: maximum number the user is allowed to enter
+  - `defaultValue`: optional default number
+  - `placeholder`: optional placholder number to display if field is empty
+  - `minimumValue`: optional minimum number the user is allowed to enter
+  - `maximumValue`: optional maximum number the user is allowed to enter
   - `style`:
     - `size`: text size
     - `color`: color in color code
@@ -801,6 +802,7 @@ TODO: @ogy: design number fields
       "type": "numberfield",
       "name": "someFieldName",
       "defaultValue": "5",
+      "placeholder": "1",
       "minimumValue": "1",
       "maximumValue": "10",
       "style": {
