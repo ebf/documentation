@@ -119,7 +119,7 @@
     
         <ul>
         
-            <li><a class="toctree-l4" href="#syntax">syntax</a></li>
+            <li><a class="toctree-l4" href="#syntax_1">syntax</a></li>
         
             <li><a class="toctree-l4" href="#examples">examples</a></li>
         
@@ -327,6 +327,19 @@
 </ul>
 <h2 id="grid">grid</h2>
 <p>A grid layout will display its components in rows and columns. The grid view will show as many columns per row as possible, based on <code>component_width</code>, in order to accomodate for differnt screen dimensions. The height of a row is automatically calculated and must be equal to the height of the tallest item of that row. Components within a grid layout will be centered horizontally and vertically if they don't occupy all availble column space.</p>
+<p><img alt="grid layout" src="../images/layout_grid.png" /></p>
+<h3 id="syntax">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"grid"</code></li>
+<li><code>component_width</code>: The text to display</li>
+<li><code>grid_border</code>: The color in color code of the 1px border between grid items or <code>none</code> if hidden</li>
+<li><code>style</code>:<ul>
+<li><code>background</code>: background color of the grid layout</li>
+</ul>
+</li>
+<li><code>components</code>: grid items</li>
+</ul>
+<h3 id="example_2">example</h3>
 <pre><code>{
   "$jason": {
     "head": {
@@ -337,6 +350,7 @@
         "items": [{
           "type": "grid",
           "component_width": "200",
+          "grid_border": "#abcdef",
           "components": [{
             "type": "image",
             "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
@@ -358,7 +372,7 @@
 </code></pre>
 <hr />
 <h1 id="styling-a-layout">Styling a layout</h1>
-<h2 id="syntax">syntax</h2>
+<h2 id="syntax_1">syntax</h2>
 <h3 id="padding">■  padding</h3>
 <p>the space surrounding the layout itself, in pixels.</p>
 <p>If not specified, the default value is <code>10</code>.</p>
