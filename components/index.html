@@ -130,6 +130,8 @@
         
             <li><a class="toctree-l4" href="#datetimepicker">■ datetimepicker</a></li>
         
+            <li><a class="toctree-l4" href="#numberfield">■ numberfield</a></li>
+        
         </ul>
     
 
@@ -693,6 +695,7 @@
 <li><a href="#dropdown">dropdown</a></li>
 <li><a href="#datepicker">datepicker</a></li>
 <li><a href="#datetimepicker">datetimepicker</a></li>
+<li><a href="#numberfield">numberfield</a></li>
 </ul>
 <h2 id="toggle">■ toggle</h2>
 <p>Toggle (Switch) view to display a boolean value. The label is always Yes or No (internationalized on the client). The value must be <code>"0"</code> (No) or <code>"1"</code> (Yes).</p>
@@ -916,6 +919,38 @@
   "type": "datetimepicker",
   "name": "someFieldName",
   "defaultValue": "2017-01-30T00:00:00Z",
+  "style": {
+    "size": "30",
+    "color": "rgb(200,0,0)",
+    "padding": "10"
+  }
+}
+</code></pre>
+<hr />
+<h2 id="numberfield">■ numberfield</h2>
+<p>Component to display and edit number values</p>
+<p>TODO: @ogy: design number fields</p>
+<h3 id="syntax_13">syntax</h3>
+<ul>
+<li><code>type</code>: <code>"numberfield"</code></li>
+<li><code>name</code>: name of the local variable to set.</li>
+<li><code>defaultValue</code>: default number</li>
+<li><code>minimumValue</code>: minimum number the user is allowed to enter</li>
+<li><code>maximumValue</code>: maximum number the user is allowed to enter</li>
+<li><code>style</code>:<ul>
+<li><code>size</code>: text size</li>
+<li><code>color</code>: color in color code</li>
+<li><code>padding</code>: padding in pixels around the entire component</li>
+</ul>
+</li>
+</ul>
+<h3 id="example_12">example</h3>
+<pre><code>{
+  "type": "numberfield",
+  "name": "someFieldName",
+  "defaultValue": "5",
+  "minimumValue": "1",
+  "maximumValue": "10",
   "style": {
     "size": "30",
     "color": "rgb(200,0,0)",
