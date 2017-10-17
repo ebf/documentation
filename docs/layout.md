@@ -162,13 +162,17 @@ A grid layout will display its components in rows and columns. The grid view wil
                 "type": "image",
                 "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
                 "style": {
-                  "width": "80"
+                  "width": "80",
+                  "padding": "10",
+                  "border": "#123456"
                 }
               }, {
                 "type": "image",
                 "url": "https://pbs.twimg.com/profile_images/557061751150112768/eMwi4Xz2.jpeg",
                 "style": {
-                  "width": "80"
+                  "width": "80",
+                  "padding": "10",
+                  "border": "#123456"
                 }
               }]
             }]
